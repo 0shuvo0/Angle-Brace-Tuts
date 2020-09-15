@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 1rem;
+	font-family: 'Roboto','Poppins',Arial,sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #090909;
+}
+
+.type{
+	font-size: 2em;
+	background-image: linear-gradient(45deg, #fccf31, #f55555);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	border-right: 2px solid #f55555;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: type 2s linear infinite alternate;
+}
+
+@keyframes type{
+	0%, 25%{
+		width: 0ch;
+	}
+	75%, 100%{
+		width: 10ch;
+	}
+}
+
+
+
+
+
+
+
+
