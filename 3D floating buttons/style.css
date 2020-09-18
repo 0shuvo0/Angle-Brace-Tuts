@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	font-size: 1rem;
+	font-family: 'Roboto','Poppins',Arial,sans-serif;
+	background-color: #030303;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.floating-btn{
+	border: none;
+	outline: none;
+	background-color: #f44336;
+	position: relative;
+	margin: 30px 20px;
+}
+.floating-btn.blue{
+	background-color: #2196f3;
+}
+.floating-btn.green{
+	background-color: #4caf50;
+}
+.floating-btn.orange{
+	background-color: #ff9800;
+}
+
+.floating-btn, .floating-btn:before, .floating-btn:after{
+	color: #fff;
+	padding: 8px 15px;
+	border-radius: 2px;
+	transform-style: preserve-3d;
+	transition: transform 0.5s;
+}
+.floating-btn:before, .floating-btn:after{
+	content: attr(data-text);
+	background-color: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.floating-btn:before{
+	opacity: 0.8;
+}
+.floating-btn:after{
+	opacity: 0.6;
+}
+
+
+.floating-btn:hover{
+	transform: skew(20deg) rotateX(20deg) rotateY(20deg)  rotateZ(10deg) translateY(-20px);
+}
+.floating-btn:hover:before{
+	transform: perspective(1000px) translateZ(25px);
+}
+.floating-btn:hover:after{
+	transform: perspective(1000px) translateZ(50px);
+}
+
+
+
+
+
+
+
+
+
