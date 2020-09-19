@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	font-size: 1rem;
+	font-family: 'Roboto','Poppins',Arial,sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: repeating-linear-gradient(#000 0%, #000 50%, #fff 50%, #fff 100%),
+		repeating-linear-gradient(90deg, #000 0%, #000 50%, #fff 50%, #fff 100%);
+	background-size: 50px 50px;
+	background-blend-mode: difference;
+}
+
+.cube{
+	--size: 100px;
+	height: var(--size);
+	width: var(--size);
+	transform-style: preserve-3d;
+	transition: transform 0.1s;
+	position: relative;
+}
+.cube .side{
+	height: 100%;
+	width: 100%;
+	background: radial-gradient(#1976d2, #0d47a1);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cube .side:nth-child(1){
+	transform-origin: center left;
+	transform: translateZ(calc(var(--size) / -2)) rotateY(-90deg);
+}
+.cube .side:nth-child(2){
+	transform-origin: center right;
+	transform: translateZ(calc(var(--size) / -2)) rotateY(90deg);
+}
+.cube .side:nth-child(3){
+	transform: translateZ(calc(var(--size) / 2));
+}
+.cube .side:nth-child(4){
+	transform-origin: top center;
+	transform: translateZ(calc(var(--size) / -2)) rotateX(90deg);
+}
+.cube .side:nth-child(5){
+	transform-origin: bottom center;
+	transform: translateZ(calc(var(--size) / -2)) rotateX(-90deg);
+}
+.cube .side:nth-child(6){
+	transform: translateZ(calc(var(--size) / -2));
+}
+
+
+
+
+
+
+
+
+
+
+
+
