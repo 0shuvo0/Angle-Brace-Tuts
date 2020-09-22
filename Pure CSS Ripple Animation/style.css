@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	font-size: 1rem;
+	font-family: 'Roboto','Poppins',Arial,sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #030303;
+}
+.ripple-btn{
+	background-color: #2196F3;
+	color: #fff;
+	padding: 8px 15px;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	overflow: hidden;
+}
+.ripple-btn:before{
+	content: '';
+	height: 130px;
+	width: 130px;
+	background-color: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	border-radius: 50%;
+	transition: transform 0.3s, background-color 0.3s;
+}
+.ripple-btn:hover:before{
+	transform: translate(-50%, -50%) scale(1);
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+
+
+
