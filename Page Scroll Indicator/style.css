@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	font-size: 1rem;
+	font-family: 'Roboto','Poppins',Arial,sans-serif;
+	background: #1C1C1C;
+	color: #fff;
+}
+.content{
+	padding: 3em;
+}
+
+.scroll-indicator{
+	height: 5px;
+	width: calc(100% - 6em);
+	background: rgba(255, 255, 255, 0.3);
+	position: fixed;
+	top: 10px;
+	left: 3em;
+	border-radius: 3px;
+}
+.scroll-indicator .progress{
+	height: 100%;
+	width: 0;
+	border-radius: 3px;
+	background: linear-gradient(30deg, #00ffd9, #d0ff96);
+	transition: width 0.15s;
+}
+
+
+
+
+
+
+
+
