@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	font-size: 1rem;
+	font-family: 'Roboto','Poppins',Arial,sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+}
+span{
+	color: #4CAF50;
+}
+
+
+.tool-tipped{
+	position: relative;
+}
+.tool-tipped:before{
+	content: attr(data-tip);
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	opacity: 0;
+	padding: 5px 10px;
+	background: #202020;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 0.8em;
+	white-space: nowrap;
+	transition: transform 0.3s, opacity 0.3s;
+}
+.tool-tipped:hover:before{
+	transform: translateX(-50%) scale(1);
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
