@@ -1,4 +1,4 @@
-![Angle Brace](ab.jpg)
+![Angle Brace](ab.png)
 # Angle Brace
 ## A YouTube channel with awesome programming tutorials
 
