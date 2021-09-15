@@ -1,0 +1,40 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 3vw;
+}
+
+.random-color{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.color-box{
+    padding-top: 80%;
+    background-color: red;
+}
+
+.color-data{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.code{
+    font-weight: bold;
+}
+.btn{
+    cursor: pointer;
+}
+
+.random-colors{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 1.5em;
+}
