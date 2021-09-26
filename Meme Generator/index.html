@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meme <i>Generator</i></h1>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+        <div class="sidebar">
+            <p>Add Image</p>
+            <input type="file" id="file">
+            <div class="group">
+                <textarea placeholder="Type something" id="text"></textarea>
+                <input type="color" id="color">
+                <button id="addText">Add Text</button>
+            </div>
+            <button id="save">Save</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/460/fabric.js" integrity="sha512-d5yqsvICrC8y0ivNsNizSCHXjzireXYU6LmzAvcrL97GMwEn0VKx1vclEwvtsh/yPD2EcATnUG1oEtJuFcTE3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
